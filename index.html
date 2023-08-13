@@ -9,17 +9,23 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 
 
 </head>
 
-<header>
+<header class="max-w-4xl mx-auto">
 
     <nav>
-        <div class="navbar flex justify-end bg-base-100">
-           
-            <div class="mr-12">
+        <div class="navbar flex justify-end items-center bg-base-100">
+            <div class="flex-1">
+                <a class="btn btn-ghost normal-case text-xl font-bold">Bike Dekho</a>
+              </div>
+              <div class="flex-none">
+            <div >
               <ul class="menu menu-horizontal px-1">
                 <li><a>Home</a></li>
                 <li><a>Shop</a></li>
@@ -28,9 +34,85 @@
                                
               </ul>
             </div>
-            <button class="btn bg-[#E76F51] rounded p-4 text-white hover:bg-black mr-10">Login</button>
-          </div>
+            <button class="btn bg-[#E76F51] rounded p-4 text-white hover:bg-black ">Login</button>
+              </div>  
+        </div>
     </nav>
+
+
+
+    <div class="mx-auto px-4   lg: block max-w-4xl relative ">
+        <div class="carousel w-full bg-[#e76f51] bg-opacity-20">
+            <div id="slide1" class="carousel-item relative w-full ">
+                <div class="slider-text flex items-center px-20 py-12">
+                    <div class="left-cont flex-1">
+                        <h2 class=" text-4xl font-bold text-black w-72 ">Ride-on R15 V4 with Smile</h2>
+                        <p class="text-xs text-[#000000] text-opacity-80 my-4 w-72">Amet minim mollit non deserunt ullamco 
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <button class=" bg-[#E76F51] rounded px-4 py-2 text-white hover:bg-black text-xs ">Purchase</button>
+                    </div>
+
+                    <img class="flex-1" src="./images/slider/bike1.png" alt="">
+                </div>
+   
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="slider-text flex items-center px-20 py-12">
+                    <div class="left-cont flex-1 ">
+                        <h2 class=" text-4xl font-bold text-black w-72 ">Ride-on R15 V4 with Smile</h2>
+                        <p class="text-xs text-[#000000] text-opacity-80 my-4 w-72">Amet minim mollit non deserunt ullamco 
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <button class=" bg-[#E76F51] rounded px-4 py-2 text-white hover:bg-black text-xs ">Purchase</button>
+                    </div>
+
+                    <img class="flex-none " src="./images/slider/bike2.png" alt="">
+                </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="slider-text flex items-center px-20 py-12">
+                    <div class="left-cont flex-1">
+                        <h2 class=" text-4xl font-bold text-black w-72 ">Ride-on R15 V4 with Smile</h2>
+                        <p class="text-xs text-[#000000] text-opacity-80 my-4 w-72">Amet minim mollit non deserunt ullamco 
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <button class=" bg-[#E76F51] rounded px-4 py-2 text-white hover:bg-black text-xs ">Purchase</button>
+                    </div>
+
+                    <img class="flex-1" src="./images/slider/bike3.png" alt="">
+                </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="slider-text flex items-center px-20 py-12">
+                    <div class="left-cont flex-1 w-1/2">
+                        <h2 class=" text-4xl font-bold text-black  w-72">Ride-on R15 V4 with Smile</h2>
+                        <p class="text-xs text-[#000000] text-opacity-80 my-4 w-72">Amet minim mollit non deserunt ullamco 
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <button class=" bg-[#E76F51] rounded px-4 py-2 text-white hover:bg-black text-xs ">Purchase</button>
+                    </div>
+
+                    <img class="flex-1 w-1/2" src="./images/slider/bike4.png" alt="">
+                </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+
 
 
 
