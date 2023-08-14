@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="cupcake">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -33,7 +33,7 @@
 <header class="max-w-4xl mx-auto">
 
   <nav>
-    <div class="navbar flex justify-end items-center bg-base-100">
+    <div class=" hidden lg: navbar lg:flex justify-end items-center bg-base-100">
       <div class="flex-1">
         <a class="btn btn-ghost normal-case text-xl font-bold">Bike Dekho</a>
       </div>
@@ -50,6 +50,29 @@
         <button class=" bg-[#E76F51] rounded px-4 py-2 text-white hover:bg-black ">Login</button>
       </div>
     </div>
+
+
+    <div class="dropdown dropdown-end dropdown-bottom flex justify-between my-5 lg:hidden">
+
+      <div class="flex pl-4">
+          
+          <a class="btn btn-ghost normal-case text-xl"></a>
+      </div>
+      <label tabindex="0" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16 " />
+          </svg>
+      </label>
+      <ul tabindex="0" class="menu  dropdown-content z-10 shadow bg-base-100 rounded-box w-52 ms-auto">
+          <li><a>Home</a></li>
+          <li><a>Shop</a></li>
+          <li><a>News</a></li>
+          <li><a>Contact</a></li>
+          <button class=" bg-[#E76F51] text-left w-20 rounded px-5 py-2 text-white hover:bg-black ">Login</button>
+
+      </ul>
+  </div>
   </nav>
 
 
@@ -57,7 +80,7 @@
   <div class="mx-auto px-4   lg: block max-w-4xl relative ">
     <div class="carousel w-full bg-[#e76f51] bg-opacity-20">
       <div id="slide1" class="carousel-item relative w-full ">
-        <div class="slider-text flex items-center px-20 py-12">
+        <div class="slider-text flex flex-col px-0 lg:flex-row mx-auto items-center lg:px-20 py-12">
           <div class="left-cont flex-1">
             <h2 class=" text-4xl font-bold text-black w-72 ">Ride-on R15 V4 with Smile</h2>
             <p class="text-xs text-[#000000] text-opacity-80 my-4 w-72">Amet minim mollit non deserunt ullamco
@@ -74,7 +97,7 @@
         </div>
       </div>
       <div id="slide2" class="carousel-item relative w-full">
-        <div class="slider-text flex items-center px-20 py-12">
+        <div class="slider-text flex flex-col px-0 lg:flex-row mx-auto items-center lg:px-20 py-12">
           <div class="left-cont flex-1 ">
             <h2 class=" text-4xl font-bold text-black w-72 ">Ride-on R15 V4 with Smile</h2>
             <p class="text-xs text-[#000000] text-opacity-80 my-4 w-72">Amet minim mollit non deserunt ullamco
@@ -89,8 +112,9 @@
           <a href="#slide3" class="btn btn-circle">❯</a>
         </div>
       </div>
-      <div id="slide3" class="carousel-item relative w-full">
-        <div class="slider-text flex items-center px-20 py-12">
+     
+      <div id="slide3" class="carousel-item relative w-full ">
+        <div class="slider-text flex flex-col px-0 lg:flex-row mx-auto items-center lg:px-20 py-12">
           <div class="left-cont flex-1">
             <h2 class=" text-4xl font-bold text-black w-72 ">Ride-on R15 V4 with Smile</h2>
             <p class="text-xs text-[#000000] text-opacity-80 my-4 w-72">Amet minim mollit non deserunt ullamco
@@ -100,27 +124,29 @@
 
           <img class="flex-1" src="./images/slider/bike3.png" alt="">
         </div>
+
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
           <a href="#slide2" class="btn btn-circle">❮</a>
           <a href="#slide4" class="btn btn-circle">❯</a>
         </div>
       </div>
       <div id="slide4" class="carousel-item relative w-full">
-        <div class="slider-text flex items-center px-20 py-12">
-          <div class="left-cont flex-1 w-1/2">
-            <h2 class=" text-4xl font-bold text-black  w-72">Ride-on R15 V4 with Smile</h2>
+        <div class="slider-text flex flex-col px-0 lg:flex-row mx-auto items-center lg:px-20 py-12">
+          <div class="left-cont flex-1 ">
+            <h2 class=" text-4xl font-bold text-black w-72 ">Ride-on R15 V4 with Smile</h2>
             <p class="text-xs text-[#000000] text-opacity-80 my-4 w-72">Amet minim mollit non deserunt ullamco
               est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
             <button class=" bg-[#E76F51] rounded px-4 py-2 text-white hover:bg-black text-xs ">Purchase</button>
           </div>
 
-          <img class="flex-1 w-1/2" src="./images/slider/bike4.png" alt="">
+          <img class="flex-none " src="./images/slider/bike4.png" alt="">
         </div>
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
           <a href="#slide3" class="btn btn-circle">❮</a>
           <a href="#slide1" class="btn btn-circle">❯</a>
         </div>
       </div>
+     
     </div>
   </div>
 
@@ -148,7 +174,7 @@
         </div>
 
 
-        <div class="feature-img flex justify-between">
+        <div class="feature-img flex flex-col items-center gap-8 md:gap-0 md:px-8 md:flex-row justify-between lg:px-0 lg:gap-0">
           <img class="w-60 grayscale" src="./images/others/feature-bike.png" alt="">
           <img class="w-60" src="./images/others/feature-bike.png" alt="">
           <img class="w-60 grayscale" src="./images/others/feature-bike.png" alt="">
@@ -169,11 +195,11 @@
       <div class="letest-news max-w-4xl mx-auto mb-16">
         <h2 class="text-4xl text-center font-bold text-black mb-8">Latest News</h2>
 
-        <div class="card grid grid-cols-3 gap-6">
+        <div class="card grid grid-cols-1 px-4 gap-6 text-center lg:grid-cols-3 lg:px-0 lg:text-left ">
           <div class="card-cont mb-6 bg-white   rounded py-4 px-4">
-            <img class=" " src="./images/others/latest1.png" alt="">
+            <img class="mx-auto lg:mx-0 " src="./images/others/latest1.png" alt="">
             <h4 class=" text-xl font-bold mt-8">Ducati XDIAVEL S-73</h4>
-            <p class=" text-sm opacity-80 font-medium my-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <p class="  text-sm opacity-80 font-medium my-6 mx-auto sm:w-9/12 md:w-1/2 lg:w-auto lg:mx-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Lacus, fermentum amet faucibus sed id nisi lectus at.
 
             </p>
@@ -183,9 +209,9 @@
 
           </div>
           <div class="card-cont mb-6 bg-white rounded py-4 px-4">
-            <img class="" src="./images/others/latest2.png" alt="">
+            <img class="mx-auto lg:mx-0" src="./images/others/latest2.png" alt="">
             <h4 class=" text-xl font-bold mt-8">Ducati XDIAVEL S-73</h4>
-            <p class=" text-sm opacity-80 font-medium my-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <p class=" text-sm opacity-80 font-medium my-6 mx-auto sm:w-9/12 md:w-1/2 lg:w-auto lg:mx-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Lacus, fermentum amet faucibus sed id nisi lectus at.
 
             </p>
@@ -195,9 +221,9 @@
 
           </div>
           <div class="card-cont mb-6 bg-white  rounded py-4 px-4">
-            <img class=" " src="./images/others/latest3.png" alt="">
+            <img class="mx-auto lg:mx-0 " src="./images/others/latest3.png" alt="">
             <h4 class=" text-xl font-bold mt-8">Ducati XDIAVEL S-73</h4>
-            <p class=" text-sm opacity-80 font-medium my-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <p class=" text-sm opacity-80 font-medium my-6 mx-auto sm:w-9/12 md:w-1/2 lg:w-auto lg:mx-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Lacus, fermentum amet faucibus sed id nisi lectus at.
 
             </p>
@@ -223,7 +249,7 @@
         <h2 class="text-4xl font-bold text-black text-center mb-10">Happy <span class="text-[#E76F51]">Clients
             says</span></h2>
 
-        <div class="review-card-cont grid grid-cols-3 gap-6">
+        <div class="review-card-cont grid grid-cols-1 gap-6 lg:grid-cols-3 ">
 
           <div class="review-card text-center p-6 bg-slate-100 rounded  ">
             <img class="w-40 mx-auto mb-10 " src="./images/others/user-1.png" alt="">
@@ -308,12 +334,12 @@
 
     <section>
 
-      <div class="FAQ max-w-4xl mx-auto mb-20">
-        <h2 class="text-4xl font-bold text-black text-center mb-16">Frequently Asked <span
+      <div class="FAQ max-w-4xl mx-auto mb-20 ">
+        <h2 class="text-4xl font-bold text-black text-center mb-16 mx-2 lg:mx-0">Frequently Asked <span
             class="text-[#E76F51]">Questions</span></h2>
 
 
-        <div class="FAQ-cont flex justify-around items-center">
+        <div class="FAQ-cont mx-8 flex flex-col items-center lg:flex-row justify-around lg:mx-0 ">
 
 
           <div class="left-c flex-1 mx-10">
@@ -383,15 +409,19 @@
   </main>
 
 
-  <footer class="  p-10 bg-neutral text-neutral-content flex justify-between items-center">
+  <footer class="  p-10 bg-neutral text-neutral-content flex flex-col items-center text-center gap-10  lg:flex-row justify-between lg:text-left lg:gap-0 ">
 
     <div class="f-left">
-      <div class="flex justify-start gap-4  no-underline ">
+      <div class="flex justify-evenly gap-4 lg:justify-start ">
         <a href="">Download Now</a>
         <a href="">License</a>
-      </div>
+       
 
-      <div class="more flex justify-between gap-4 no-underline my-2 ">
+
+      </div>
+      
+
+      <div class="grid max-[421px]:grid-cols-2 max-[766px]:grid-cols-3    gap-2 no-underline my-2  md:grid-flow-col md:gap-4 ">
         <a href="">About</a>
         <a href="">Features</a>
         <a href="">Pricing</a>
@@ -409,8 +439,8 @@
     <div>
       <span class="footer-title">Get the App</span>
       <div class="grid grid-flow-row gap-4 mt-4">
-        <img class="w-1/2" src="./images/others/android.png" alt="">
-        <img class="w-1/2" src="./images/others/ios.png" alt="">
+        <img class="w-1/2 mx-auto lg:mx-0" src="./images/others/android.png" alt="">
+        <img class="w-1/2 mx-auto lg:mx-0" src="./images/others/ios.png" alt="">
       </div>
     </div>
   </footer>
